@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elicia Bryant | Computer Science Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html">Elicia Bryant</a>
+      <nav class="nav-links" id="desktopNav">
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#resume">Resume</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-workspace">
+          <div class="workspace-panel glass-card">
+            <div class="workspace-status">
+              <div class="status-pill">SYSTEM.KERNEL :: v2.5.0 ONLINE</div>
+              <div class="window-controls">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+            </div>
+            <div class="hero-copy">
+              <p class="eyebrow">CODE WORKSPACE</p>
+              <div class="hero-header">
+                <img class="hero-avatar" src="profile.jpg" alt="Portrait of Elicia Bryant" onerror="this.onerror=null; this.src='profile.svg'" />
+                <h1>Hello, I'm <span class="hero-highlight">Elicia Bryant</span></h1>
+              </div>
+              <p class="hero-text">&lt;Architect /&gt; Engineering Beyond Boundaries. Specializing in distributed systems, real-time architecture, and polished software experiences.</p>
+              <div class="workspace-buttons">
+                <a class="btn btn-primary btn-small" href="#projects">Initialize OS</a>
+                <a class="btn btn-secondary btn-small" href="https://github.com/bryantelicia54" target="_blank" rel="noopener">Check out GitHub</a>
+              </div>
+            </div>
+            <div class="workspace-footer">
+              <span class="meta-label">LOADED_MODULES</span>
+              <div class="module-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>TypeScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-panel glass-card terminal-card">
+            <div class="terminal-topbar">
+              <div class="terminal-icons">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="terminal-title">portfolio.tsx</div>
+            </div>
+            <pre class="terminal-code"><code>// Welcome to my workspace
+import { Developer } from './universe';
+
+const Portfolio = () => {
+  return (
+    <Developer
+      name="Elicia Bryant"
+      role="Full Stack Engineer"
+      passion="Engineering Beyond Boundaries"
+    />
+  );
+};
+
+export default Portfolio;</code></pre>
+            <div class="terminal-actions">
+              <a class="btn btn-primary" href="#projects">Run Profile</a>
+              <a class="btn btn-secondary" href="#resume">View Resume</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="chat-toggle" id="chatToggle" aria-label="Open portfolio chat">
+          <img src="profile.jpg" alt="Chat avatar" />
+          <span class="chat-status"></span>
+        </button>
+
+        <div class="chat-widget hidden" id="chatWidget">
+          <div class="chat-header">
+            <div>
+              <strong>Portfolio Guide AI</strong>
+              <span>Ask about skills, project estimates, direct contact, and the workspace.</span>
+            </div>
+            <button class="chat-close" id="chatClose" aria-label="Close chat">&times;</button>
+          </div>
+          <div class="chat-messages" id="chatMessages">
+            <div class="chat-message assistant">
+              Hi! I’m your Portfolio Guide. Ask me about skills, project scope, contact details, or any part of the site.
+            </div>
+          </div>
+          <div class="chat-presets" id="chatPresets">
+            <button type="button">Tell me your skills</button>
+            <button type="button">Project estimates</button>
+            <button type="button">How do I contact you?</button>
+            <button type="button">Resume details</button>
+            <button type="button">Give me a tour</button>
+          </div>
+          <form class="chat-input-row" id="chatForm">
+            <input id="chatInput" type="text" placeholder="Ask a question..." />
+            <button class="btn btn-primary" type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="section-heading">
+          <span>01</span>
+          <h2>About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy glass-card">
+            <p>I am a computer science major who builds clean, user-focused software with polished design and strong technical structure. My work balances elegant interface design with reliable engineering.</p>
+          </div>
+          <div class="skills-panel glass-card tech-panel">
+            <div class="skill-block"><strong>Languages</strong><span>JavaScript, Python, Java, SQL</span></div>
+            <div class="skill-block"><strong>Frameworks</strong><span>React, Node.js, Flask, Express</span></div>
+            <div class="skill-block"><strong>Tools</strong><span>Git, GitHub, VS Code, Figma</span></div>
+            <div class="skill-block"><strong>Focus</strong><span>Responsive UI, system design, accessible experiences</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section" id="projects">
+        <div class="section-heading">
+          <span>02</span>
+          <h2>Major Projects</h2>
+        </div>
+        <p class="section-intro">A selection of major projects with bold presentation, polished details, and a tech-forward feel.</p>
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project cards inserted by JavaScript -->
+        </div>
+      </section>
+
+
+      <section class="resume section" id="resume">
+        <div class="section-heading">
+          <span>04</span>
+          <h2>Resume &amp; Upload</h2>
+        </div>
+        <div class="resume-grid">
+          <div class="glass-card resume-card">
+            <p class="resume-description">Your resume section is ready. Upload a PDF to preview it instantly in the browser, or replace the placeholder file at <code>resume.pdf</code> once your document is complete.</p>
+          <p class="form-note">If you want, you can also drag the uploaded resume file from your browser after upload to save it locally.</p>
+            <div class="resume-actions">
+              <label class="file-button" for="resumeUpload">Upload Resume</label>
+              <input type="file" id="resumeUpload" accept="application/pdf" />
+              <a class="btn btn-link" id="resumeDownload" href="resume.pdf" download="resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+            </div>
+          </div>
+          <div class="glass-card resume-preview" id="previewArea">
+            <p class="preview-note">Preview will appear here once you upload a PDF.</p>
+            <div class="preview-frame" id="pdfPreview"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="section-heading">
+          <span>05</span>
+          <h2>Contact</h2>
+        </div>
+        <div class="contact-panel glass-card">
+          <p>Want to connect or share project details? I’d love to hear from you. The GitHub link and email are now set with your account details.</p>
+          <div class="contact-links">
+            <a class="btn btn-secondary" href="https://github.com/bryantelicia54" target="_blank" rel="noopener">View GitHub</a>
+            <a class="btn btn-outline" href="mailto:bryantelicia54@gmail.com">Email Me</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Built with HTML, CSS, and JavaScript • Baby blue accents for a clean tech experience.</p>
+    </footer>
+  </div>
+
+  <div class="mobile-nav" id="mobileNav">
+    <nav>
+      <a href="index.html#about">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#resume">Resume</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
